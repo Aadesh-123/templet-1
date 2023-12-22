@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topperskills2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- JavaScript Bundle (including Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      button {
+                margin-top: 50px;
+                border: none;
+                background-color: rgb(27, 203, 56);
+              }
+              button:hover {
+                background-color: chocolate;
+              } 
+
+      body {
+        overflow-x: hidden;
+      }
+
+      #page-one {
+        background-image: url(../js/image/banner-1.jpg);
+        height: 100vh;
+        width: 100vw;
+      }
+      #intro {
+        background-image: url("../js/image/topskillbg.jpg");
+        background-size: cover;
+
+        background-attachment: fixed;
+        background-color: #000000;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+      }
+
+      h1 {
+        color: rgb(200, 17, 108);
+        font-weight: bold;
+      }
+
+      .align {
+        text-align: center;
+      }
+      .dot {
+        height: 57px;
+        display: inline-block;
+        width: 57px;
+        border-radius: 100%;
+        background-color: rgb(240, 205, 6);
+      }
+
+        /* span:hover {
+        background-color: red;
+      }   */
+
+      .dot2 {
+        height: 57px;
+        display: inline-block;
+        width: 57px;
+        border-radius: 100%;
+        background-color: rgb(240, 173, 6);
+      }
+       .dot2:hover {
+        background-color: red;
+      } 
+      
+      button {
+        background-color: #069ff4;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: purple;
+      }
+      i {
+        color: rgb(17, 239, 255);
+      }
+      #bg {
+        background-image: url(../js/image/bg-1.jpg);
+        background-attachment: fixed;
+        background-color: #f7f7f7;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+      }
+
+      .star {
+        position: absolute;
+      }
+      p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+
+      .title {
+        font-size: 34px;
+        font-weight: 700;
+        margin: 52px 0 10px;
+        position: relative;
+        text-transform: capitalize;
+      }
+
+      .line {
+        background-color: #069ff4;
+        border-radius: 10px;
+        display: inline-block;
+        height: 5px;
+        margin-right: 5px;
+        position: relative;
+        width: 60px;
+      }
+
+      .rating-wrap {
+        margin: 0 0 45px;
+        text-align: right;
+      }
+
+      .rating-warp .rating {
+        color: #069ff4;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+      }
+
+      .rating {
+        color: #ad9e88;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+      }
+      .rating-warp .rating .star {
+        color: #069ff4;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 2005px;
+      }
+
+      .image {
+        border-radius: 100%;
+      }
+
+
+
+      .circle{
+        background-color: rgba(6, 159, 244, 0.7);;
+        height: 100px;
+        width: 100px;
+        border: 5px solid white;
+        border-radius: 50%;
+        
+        /* left: 210px; */
+        
+        
+        
+        
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: white; 
+      }
+      
+      .card {
+        border: 2px solid #069ff4;
+      }
+
+      h3 {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+      }
+       /* .textstrike {
+        color: red;
+        text-decoration: line-through;
+      } */
+
+      .black {
+        color: #000000;
+      }
+
+      .card-body {
+        text-decoration: none;
+        text-align: center;
+        background-color;
+        align-items: center;
+        
+      } 
+
+      .card-link {
+        text-decoration: none;
+        text-align: center;
+        background-color:  rgba(6, 159, 244, 0.7);
+        color: white;
+        font-size: 20px;
+        align-items: center;
+      
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+      .card-link:hover {
+        background-color: rgb(178, 16, 231);
+
+      }
+
+      .card-top:hover {
+        background-color: #a32727;
+      }
+
+      /* page 5 css */
+      .short-line {
+    background-color: #069ff4;
+    border-radius: 10px;
+    display: inline-block;
+    height: 3px;
+    margin-right: 5px;
+    position: relative;
+    width: 50px;
+      }
+      .long-line {
+    background-color: #069ff4;
+    border-radius: 10px;
+    display: inline-block;
+    height: 3px;
+    margin-right: 5px;
+    position: relative;
+    width: 100px;
+      }
+    
+      .subtitle {
+        max-width: 620px;
+    margin: 0 auto 80px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+  #back {
+    background-image: url(../js/image/bg\ 5.jpg);
+    
+  }   
+  
+  .icon {
+        height: 50px;
+        display: inline-block;
+        width: 50px;
+        border-radius: 100%;
+        background-color: rgb(240, 173, 6);
+        float: left;
+        margin-right: 15px;
+      }
+    
+
+      .ico {
+        margin-top: -38px;
+        font-size: 30px;
+        text-align: start;
+        height: 50px;
+        display: inline-block;
+        width: 50px;
+        border-radius: 100%;
+        background-color: rgb(240, 173, 6);
+        padding-left: 13px;
+        padding-top: 3px;
+      }
+
+      .ico:hover {
+        background-color: #f7f7f7;
+      }
+
+      .hover:hover {
+        background-image: url(../js/instagram.svg);
+        background-repeat: no-repeat;
+        background-color: #4724f5;
+        
+      } 
+       .add {
+        padding-left: 65px;
+      }
+      .midia {
+        height: 40px;
+        display: inline-block;
+        width: 40px;
+        background-color: rgb(240, 173, 6);
+        color: #069ff4;
+      }
+      .midia:hover{
+        transition: 2s;
+        animation: infinite;
+        background-color: #f7f7f7;
+      }
+      .company:hover {
+       color: #069ff4;
+      }
+
+      . {
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="container-fluid justify-content-center">
+    <header class="nav">
+      
+        
+        
+          <div class="row">
+            
+              <!-- Image and text -->
+              <div class="col-12 col-md-12 position-absolute position-fixed z-2">
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.CRn3K2BHlZ1sNqugPM7CxQAAAA&pid=Api&P=0&h=180" width="80" height="" class="d-inline-block align-top" alt="">
+    
+  </a>
+
+  
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#page-one">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#page-two">WHY ARE WE <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#intro">BENEFITS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#page-four">TESTIMONIAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#bg">FEES</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-six">CONTACT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#back">MAINZ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#footer">FOOTER</a>
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+</nav>
+            </div>
+          </div>
+        
+     
+      
+    </header>
+  </div>
+    <!-- navbar end -->
+    <!-- page 1 -->
+<section class="container-fluid" id="page-one">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-12 col-md-6 position-absolute " style="margin-top: 25%;">
+        <h1>WANT TO BE A JAVA EXPERT?</h1>
+        <h3>...You Are At Right Place.</h3>
+        <div><button>Enroll Now!</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- page 1 end -->
+    <section class="container-fluid" style="height: vh" id="page-two">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12">
+            <h1 class="text-center">
+              abcd - A Best Java Training Classes Institute In Narhe,
+             Pune Maharashtra <br />
+              <span style="font-weight: 900px">__</span>
+              <span style="font-weight: 900px">______</span>
+            </h1>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+                <p class="text-black text-center">
+                  We at provide the best practical core Java and
+                  advance Java training in our software training institute in
+                  Narhe,, Sinhagad road, Warje, Dhayari Phata, Katraj
+                  and Balaji Nagar Pune locations. Our complete practical Java
+                  training courses make student an expert in Java and also
+                  provide 100% Job oriented Java training to clear any Java
+                  interview easily.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img
+              class="w-100"
+              src="../js/image/java-training-guidance.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-md-6 ps-5">
+            <h3 class="text-black">Is Java Your Biggest Hurdle?</h3>
+            <p class="mt-4" style="font-size: 16px">
+              What are the uses of Java? Where to start learning Java language?
+              How to learn Java programming? How to use syntaxes in realtime
+              projects? These are the very basic questions which rise in a
+              fresher's mind. Well, we take care of all these.
+            </p>
+            <p class="" style="font-size: 15px">
+              We have designed Java courses and proven teaching patterns which
+              are very easy to understand, even a student from non technical
+              background can learn with fun!. We make sure that the student
+              understood the Java concepts then only we proceed for next topic
+              otherwise we repeat the topic until it is clear for the student.
+            </p>
+            <button>Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 1 div in two parts -->
+
+    <section class="container-fluid w-100" >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+                <p class="text-white text-center">
+                  We at abcd have designed a best practical Java
+                  Training Course package in a way that will help the students
+                  to become a Java expert having thorough knowledge about the
+                  Java technologies. We encourage you to join this practical and
+                  job oriented Java training course in our classes at Narhe,
+                 budruk, Katraj, Warje, Dhayari Phata, Balaji nagar,
+                  Sinhagad road, Pune.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+  
+    <!-- page 3 -->
+    <section class="container-fluid h-100" id="intro">
+      <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 mt-5">
+              <h1 class="text-center">
+                Special Java Package <br />
+                <span style="font-weight: 900px">__</span>
+                <span style="font-weight: 900px">______</span>
+              </h1>
+            </div>
+            <div class="col-12 col-md-4 text-white order-1 order-md-0">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                  <!-- icon 1 -->
+                  <div class="align">
+                    
+                    <span class="dot2">
+                      <i
+                        class="fa-sharp fa-solid fa-lock-open"
+                        style="padding-top: 18px"
+                      ></i>
+                    </span>
+                    <!-- </button> -->
+                  </div>
+  
+                  <h2 class="text-center">C LANGUAGE</h2>
+                  <p class="text-center">
+                    Unlock your programming potential, lets transform your
+                    imagination into magic.
+                  </p>
+                  <!-- icon 1 end -->
+  
+                  <!-- icon 2 -->
+                  <div class="align d-block">
+                    
+                    <span class="dot2">
+                      <i
+                        class="fa-solid fa-mug-saucer fa-xl"
+                        style="padding-top: 28px; color: "
+                      ></i>
+                    </span>
+                    <!-- </button> -->
+                  </div>
+  
+                  <h2 class="text-center">JSE- CORE JAVA</h2>
+                  <p class="text-center">
+                    Without core java there is nothing, this is the important
+                    module of our Java training course package.
+                  </p>
+                  <!-- icon2  end -->
+  
+                  <!-- icon 3 -->
+                  <div class="align">
+                  
+                    <span class="dot2">
+                      <i
+                        class="fa-solid fa-mug-saucer fa-xl"
+                        style="padding-top: 28px"
+                      ></i>
+                    </span>
+                    <!-- </button> -->
+                  </div>
+  
+                  <h2 class="text-center">JEE- ADVANCE JAVA</h2>
+                  <p class="text-center">
+                    If you are willing to develop distributed applications then
+                    here we go...
+                  </p>
+                  <!-- icon3  end -->
+                </div>
+              </div>
+            </div>
+            <!-- row 2  -->
+            <div class="col-12 col-md-4 d-flex justify-content-center order-0 order-md-1">
+              <img
+                class="w-75 text-center"
+                src="../js/image/topper-skills-practical-mobile.png"
+                alt=""
+              />
+            </div>
+            <!-- row 2 end -->
+  
+            <!-- icon second row third -->
+            <div class="col-12 col-md-4 text-white position-relative order-2 order-md-2">
+              <div class="align">
+            
+                <span class="dot2">
+                  <i
+                    class="fa-sharp fa-solid fa-earth-americas fa-xl"
+                    style="padding-top: 28px"
+                  ></i>
+                </span>
+                <!-- </button> -->
+              </div>
+  
+              <h2 class="text-center">WEB SERVICES</h2>
+              <p class="text-center">
+                The Web services play important role in enterprise applications so
+                we have included this in Java training course package.
+              </p>
+              <!-- icon 1 end -->
+  
+              <!-- icon 2 -->
+              <div class="align">
+              
+                <span class="dot2">
+                  <i class="fa-solid fa-tv fa-xl" style="padding-top: 28px"></i>
+                </span>
+                <!-- </button> -->
+              </div>
+  
+              <h2 class="text-center">HIBERNATE</h2>
+              <p class="text-center">
+                Hibernate take out the burden from developer, you will get
+                complete knowledge of Hibernate classes.
+              </p>
+              <!-- icon2  end -->
+  
+              <!-- icon 3 -->
+              <div class="align">
+                
+                <span class="dot2">
+                  <i class="fa-solid fa-tv fa-xl" style="padding-top: 28px"></i>
+                </span>
+                <!-- </button> -->
+              </div>
+  
+              <h2 class="text-center">PROJECT INTERNSHIP</h2>
+              <p class="text-center">
+                If you develop a project under our expert's guidance then we
+                assure you that you will be able to develop any software.
+              </p>
+            </div>
+          </div>
+  
+      </div>
+    </section>
+
+    <!-- page 4 -->
+    <section class="container-fluid h-100" id="page-four">
+      <section class="container" style="height: 100vh;">
+        <div class="row w-100">
+          <div class="col-12 col-md-12 mt-5">
+            <h1 class="text-center">
+              Great Experience <br />
+              <span style="font-weight: 900px">__</span>
+              <span style="font-weight: 900px">______</span>
+            </h1>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+                <p
+                  class="text-black"
+                  style="font-weight: bold; font-size: 20px"
+                >
+                  Whats the match for a feeling of developing your own software
+                  application which works as expected without errors!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                class="w-100"
+                src="https://www.topperskills.com/java/images/best-java-training-pune.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <p class="w-100">
+                We at abcd transform a frustrated Java beginner to an
+                expert Java Developer.
+              </p>
+
+              <p class="w-100">
+                Every student leaves our office wearing a smile, confidence and
+                satisfaction on his face. We help the students to achieve their
+                goals of joining the Java training courses.
+              </p>
+
+              <p class="w-100">
+                Read what students say about our training, below are some of
+                feedbacks of the students.
+              </p>
+
+              <p class="w-100">
+                To experience the best genuine Java training, to become a real
+                Java developer, Join our Java training classes today at Narhe,
+               budruk, Karve nagar, Dhayri phata, Warje, Sinhagad road,
+                Balaji nagar, Katraj, Pune.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- page 5 start -->
+    <section class="container-fluid w-100" id="bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 text-center">
+            <div class="title">
+              <h2>What Our Student Say?</h2>
+              <span style="font-weight: 900px; color: #069ff4">__</span>
+              <span style="font-weight: 900px; color: #069ff4">______</span>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <div class="text-end">
+                <i class="fa-solid fa-star fa-xl" style="color: #0f5ef0"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #0f5ef0"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #0f5ef0"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #0f5ef0"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #0f5ef0"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <div class="blockquote text-start">
+                <i class="fa-solid fa-quote-left fa-xl mt-5"></i>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- carousel -->
+        <div class="row">
+          <div class="col-12 col-md-12 position-relative flex-column">
+          
+              <div id="carouselExample" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button 
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div
+                      class="carousel-item active h-100"
+                      data-bs-interval="1000"
+                    >
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                          <p class="text-center text-white">
+                            I am quite impressed with trainer's technical
+                            expertise. He has demonstrated the ability to take a
+                            complex concepts and break it down into easy
+                            understandable steps. Without this Java training
+                            course I don’t think I would have been able to
+                            complete my academic project.
+                          </p>
+                        </div>
+                        <div class="imgage text-center py-5">
+                          <img
+                            class=""
+                            src="../js/image/sumit.jpg"
+                            alt=""
+                            style="border-radius: 100%; height: 200px; width: 200px;"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                          <p class="text-center text-white">
+                            I am quite impressed with trainer's technical
+                            expertise. He has demonstrated the ability to take a
+                            complex concepts and break it down into easy
+                            understandable steps. Without this Java training
+                            course I don’t think I would have been able to
+                            complete my academic project.
+                          </p>
+                        </div>
+                        <div class="imgage text-center py-5">
+                          <img
+                            class=""
+                            src="https://tse3.mm.bing.net/th?id=OIP.GlIuUj-GYrRL_G8WvZ3YagHaHw&pid=Api&P=0&h=180"
+                            alt=""
+                            style="border-radius: 100%; width: 200px; height: 200px;"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                          <p class="text-center text-white">
+                            I am quite impressed with trainer's technical
+                            expertise. He has demonstrated the ability to take a
+                            complex concepts and break it down into easy
+                            understandable steps. Without this Java training
+                            course I don’t think I would have been able to
+                            complete my academic project.                           
+                  
+                          </p>
+                        </div>
+                        <div class="imgage text-center py-5">
+                          <img
+                            class=""
+                            src="https://tse2.mm.bing.net/th?id=OIP.ewdsugvLYhr-nesnB1FmkwHaHa&pid=Api&P=0&h=180"
+                            alt=""
+                            style="border-radius: 100%; width: 200px; height: 200px;"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- page 6 -->
+    <section class="container-fluid" id="page-six">
+      <div class="container mt-5">
+      <div class="row justify-content-center">
+ <!-- card 1 -->
+        <div class="col-12 col-md-4 mt-4">
+         
+          <div class="card">
+            <div class="card-top bg-info position-relative">
+              <h3 class="" style="height: 100px;">JSE (Core Java)</h3>
+              <div class="circle position-absolute top-100 start-50 translate-middle">
+                <p>INR</p>
+                <sub>6999</sub>
+              </div>
+              
+              </div>
+              <div class="card-body">
+                <p class="text-center pt-4">C language</p>
+              </div>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">JSE - Core Java</li>
+              <li class="list-group-item textstrike"><span class="black">JEE - Advance Java</span></li>
+              <li class="list-group-item textstrike"><span class="black">Web Services</span></li>
+              <li class="list-group-item textstrike"><span class="black">Hibernate</span></li>
+              <li class="list-group-item textstrike"><span class="black">SQL</span></li>
+              <li class="list-group-item">50+ Technical Tasks</li>
+              <li class="list-group-item">300+ Interview Questions</li>
+              <li class="list-group-item">1 month</li>
+              <li class="list-group-item textstrike"><span class="black">Internship Project</span></li>
+              <li class="list-group-item textstrike"><span class="black">Job Profile Building</span></li>
+              <li class="list-group-item textstrike"><span class="black">Mock Interviews</span></li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link btn-outline-primary"> Choose this course</a>
+            </div>
+          
+         </div>
+         </div>
+      
+        <!-- card 1 end -->
+
+
+        <!-- card 2 start -->
+        
+        <div class="col-12 col-md-4 mt-4">
+        
+           <div class="card mt-">
+             <div class="card-top bg-info position-relative">
+               <h3 class="" style="height: 100px;">JSE (Core Java)</h3>
+               <div class="circle position-absolute top-100 start-50 translate-middle">
+                 <p>INR</p>
+                 <sub>7999</sub>
+               </div>
+              
+               </div>
+               <div class="card-body">
+                 <p class="text-center pt-4 textstrike"><span class="black">C language</span></p>
+               </div>
+             <ul class="list-group list-group-flush text-center">
+               <li class="list-group-item textstrike"><span class="black">JSE - Core Java</span></li>
+               <li class="list-group-item"><span>JEE - Advance Java</span></li>
+               <li class="list-group-item"><span>Web Services</span></li>
+               <li class="list-group-item"><span>Hibernate</span></li>
+               <li class="list-group-item textstrike"><span class="black">SQL</span></li>
+               <li class="list-group-item">20+ Technical Tasks</li>
+               <li class="list-group-item">200+ Interview Questions</li>
+               <li class="list-group-item">1 month</li>
+               <li class="list-group-item textstrike"><span class="black">Internship Project</span></li>
+               <li class="list-group-item textstrike"><span class="black">Job Profile Building</span></li>
+               <li class="list-group-item textstrike"><span class="black">Mock Interviews</span></li>
+             </ul>
+             
+             <div class="card-body">
+               <a href="#" class="card-link btn-outline-primary"> Choose this course</a>
+             </div>
+        
+          </div>
+          </div>
+        
+         <!-- card 2 end -->
+
+        
+        <!-- card 3 start -->
+        
+        <div class="col-12 col-md-4 mt-4">
+          
+           <div class="card">
+             <div class="card-top bg-info position-relative" >
+               <h3 class="" style="height: 100px;">JSE (Core Java)</h3>
+               <div class="circle position-absolute top-100 start-50 translate-middle">
+                 <p>INR</p>
+                 <sub>7999</sub>
+               </div>
+               
+               </div>
+               <div class="card-body">
+                 <p class="text-center pt-4">C language</p>
+               </div>
+             <ul class="list-group list-group-flush text-center">
+               <li class="list-group-item">JSE - Core Java</li>
+               <li class="list-group-item">JEE - Advance Java</li>
+               <li class="list-group-item">Web Services</li>
+               <li class="list-group-item">Hibernate</li>
+               <li class="list-group-item">SQL</li>
+               <li class="list-group-item">20+ Technical Tasks</li>
+               <li class="list-group-item">200+ Interview Questions</li>
+               <li class="list-group-item">1 month</li>
+               <li class="list-group-item">Internship Project</li>
+               <li class="list-group-item">Job Profile Building</li>
+               <li class="list-group-item">sMock Interviews</li>
+             </ul>
+             
+             <div class="card-body">
+               <a href="#" class="card-link btn-outline-primary"> Choose this course</a>
+             </div>
+           </div>
+ 
+          </div>
+         
+        <!-- card 3 end -->
+    
+      </div>
+
+      </div>      
+    </div>
+    </section>
+
+    <!-- page 6 end -->
+
+    <!-- page 7 start -->
+    <section class="container-fluid mt-5" id="back">
+      <div class="container justify-content-center">
+        <!-- title -->
+        <div class="row">
+          <div class="col-12 col-md-12 text-center text-white">
+            <div class="title">
+              <h2>How Can We Help You</h2>
+               <span class="short-line"></span>
+               <span class="long-line"></span>
+              </div>
+              <div class="subtitle">Inquire about Java practical training courses | classes institute in Narhe,, Warje, Karve nagar, Sinhagad road, Katraj, Balaji nagar, Pune.</div>
+          </div>
+        </div>    
+              <!-- location -->
+              <div class="row">
+                <div class="col-12 col-md-5 text-white">
+                <div class="col-12 col-md-5 position-relative w-100">
+                <div class="dteils">
+                  <div class="container">
+                  <div class="ico position-absolute" style="top: 30px;">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="add d-inline-block">
+                    <h4 style="margin: 0 0 10px;">Our Location</h4>
+                    <p class="d-block" style="font-size: 15px;">101, Avnish Regency, nr. Navale bridge, Narhe, Pune-41</p>
+                  </div>
+                </div>
+              </div>
+              <!-- location end -->
+
+              <!-- massege -->
+              <div class="col-12 col-md-5 position-relative w-100">
+              <div class="dteils">
+                <div class="container">
+                <div class="ico position-absolute" style="top: 30px;">
+                  <i class="fa-solid fa-envelope fa-2xs" style="font-size: 26px;"></i>
+                </div>
+                <div class="add d-inline-block">
+                  <h4 style="margin: 0 0 10px;">Mail Us</h4>
+                  <p class="d-block" style="font-size: 15px;">info[at]topperskills[dot]com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+              <!-- massage end -->
+
+             <!-- call symabo  -->
+             <div class="col-12 col-md-5 position-relative w-100">
+              <div class="dteils">
+                <div class="container">
+                <div class="ico position-absolute" style="top: 30px;">
+                  <i class="fa-solid fa-phone fa-xs"></i>
+                </div>
+                <div class="add d-inline-block">
+                  <h4 style="margin: 0 0 10px;">Call Us</h4>
+                  <p class="d-block" style="font-size: 15px;">+91-78755-80668</p>
+                </div>
+              </div>
+            </div>
+          </div>
+             <!-- call end -->
+
+             <!-- find us -->
+             <div class="col-12 col-md-5 position-relative w-100">
+              <div class="dteils">
+                <div class="container">
+                <div class="ico position-absolute" style="top: 30px;">
+                  <i class="fa-solid fa-share-from-square fa-xs"></i>
+                </div>
+                <div class="add d-inline-block">
+                  <h4 style="margin: 0 0 10px;">Find Us On</h4>
+                  <p class="d-block" style="font-size: 15px;"><span class="midia"><i class="fa-brands fa-twitter fa-lg" style="padding-left: 10px; padding-top: 20px;"></i></span>
+                    <span class="midia"><i class="fa-brands fa-facebook fa-lg " style="padding-left: 10px; padding-top: 20px;"></i></span>
+                    <span class="midia"><i class="fa-brands fa-google fa-lg" style="padding-left: 10px; padding-top: 20px;"></i></span>
+                    <span class="midia"><i class="fa-brands fa-youtube fa-lg" style="padding-left: 10px; padding-top: 20px;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+             <!-- find us end -->
+            </div>
+
+                
+              <!-- </div> -->
+              
+              <!-- location end -->
+        <!-- from -->
+        <div class="col-12 col-md-7 order-md-last order-first">
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: #069ff4;"><i class="fa-solid fa-user fa-xl"></i></span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Your Name*">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: #069ff4;"><i class="fa-solid fa-envelope fa-xl"></i></span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Your Email*" required data-error="please enter Name">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: #069ff4;"><i class="fa-solid fa-phone fa-xl"></i></span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone*">
+          </div>
+          
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg" style="height: 90px; background-color: #069ff4;"><i class="fa-solid fa-pen fa-xl"></i></span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Write comment here*s">
+          </div>
+          <div class="" style="margin-top: 70px;"><button class="text-white hover" style="width: 150px; height: 50px; font-size: 22px;">Send</button></div>
+          <div>*Required fields</div>
+      </div>
+    </div>
+      </div>
+    </section>
+    <!-- page 6 end -->
+
+    <!-- footer -->
+    <section class="container-fluid" style="height: 25vh;" id="footer">
+      <div class="container justify-content-center">
+        <div class="row">
+          <div class="col-12 col-md-12 text-center">
+           <div class="mt-5">© 2017 All Rights Reserved abcd. <span class="company fs-5 fw-bold">- powered by : Infosys.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
